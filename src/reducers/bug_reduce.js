@@ -1,7 +1,10 @@
-export default function BugReduce(state = {}, action) {
+export default function BugReduce(state = { bug: "failure"}, action) {
 	switch (action.type) {
 		case 'FETCH_BUGS':
-			return {...state,
+			// console.log("testing the reducer")
+			// console.log(action)
+			// console.log(state)
+			return {
 				bugs: action.payload
 			}
 			

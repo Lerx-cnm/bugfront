@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 class Nav extends React.Component{
     render(){
         return(
             <div className={'navs'}>
-                    <p>testing about</p>
-                    <p>testing contact</p>
-                    <p>testing home</p>
+                    <Link to="/new">New</Link>
+                    <Link to='/'>Home</Link>
+                    <Link to='/login'>Login</Link>
             </div>
         )
     }
